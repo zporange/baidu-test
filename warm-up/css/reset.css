@@ -76,3 +76,4 @@ td,th {padding: 0;}
 /*清除浮动*/
 .clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden}
 .clearfix {*zoom:1}
+
