@@ -8,7 +8,7 @@ img {border: 0;}
 table {border-collapse: collapse;border-spacing: 0;}
 td,th {padding: 0;}
 /*全局定义样式*/
-.layot {margin: 0 auto;width: 80%;}
+.layout {margin: 0 auto;width: 80%;}
 .blank {height: 90px;}
 /*公共样式表*/
 /* position */
@@ -76,3 +76,4 @@ td,th {padding: 0;}
 /*清除浮动*/
 .clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden}
 .clearfix {*zoom:1}
+
