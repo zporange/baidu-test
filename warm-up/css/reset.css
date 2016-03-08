@@ -8,13 +8,13 @@ img {border: 0;}
 table {border-collapse: collapse;border-spacing: 0;}
 td,th {padding: 0;}
 /*全局定义样式*/
-.layot {margin: 0 auto;width: 80%;}
+.layout {margin: 0 auto;width: 80%;}
 .blank {height: 90px;}
 /*公共样式表*/
 /* position */
 .rel{position:relative;}
 .abs{position:absolute;}
-.fix{position: fixed;}	
+.fix{position: fixed;}
 /*left top bottom  right*/
 .t0{top: 0;}
 .l0{left: 0;}
@@ -28,7 +28,7 @@ td,th {padding: 0;}
 .dn{display:none;}
 .di{display:inline;}
 .db{display:block;}
-.dib{display:inline-block;} 
+.dib{display:inline-block;}
 /* float */
 .fl{float:left;}
 .fr{float:right;}
