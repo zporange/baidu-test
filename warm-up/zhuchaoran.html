@@ -3,29 +3,126 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="css/reset.css">
     <style media="screen">
         .team {
-            width: 100%;
-            background: pink;
+            /*background: pink;*/
         }
 
-        .wrap {
-            margin: 0 auto;
-            width: 1150px;
-            min-height: 550px;
-            background: green;
+        .header-title {
+            text-align: center;
+            padding: 2.4em 0em;
+        }
+
+        .header-title h3 a {
+            color: #555658;
+            font-size: 2.4em;
+        }
+
+        .content-members {
+            margin: 2em 0;
+            font-size: 0;
+        }
+
+        .member {
+          display: inline-block;
+          width: 20%;
+          font-size: 16px;
+          padding: 0 2.5%;
+        }
+
+        .member img {
+            border-radius: 50%;
+        }
+
+        .member h3,
+        .member h4,
+        .member p {
+            text-align: center;
+        }
+
+        .member h3 {
+          color: #49CBCD;
+          font-size: 1.2em;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+        }
+
+        .member h4 {
+          color: #4E525D;
+          font-size: 0.9em;
+          font-weight: 600;
+        }
+
+        .member p {
+          font-size: 0.875em;
+          color: #5A5E68;
+          line-height: 1.8em;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        .member a .rollover {
+            position: absolute;
+            background: url(img/puls.png) center center no-repeat rgba(0, 0, 0, 0.87);
+            opacity: 0;
+            width: 220px;
+            height: 220px;
+            z-index: 5;
+            border-radius: 50%;
+            transition: all .3s ease-out;
+        }
+
+        .member a .rollover:hover {
+            opacity: 0.7;
         }
     </style>
   </head>
   <body>
     <div id="team" class="team">
-        <div class="wrap">
+        <div class="layout">
             <div class="header-title">
                 <h3>
                     <a href="#">The Team</a>
                 </h3>
             </div>
-            <div class="content-members"></div>
+            <div class="content-members">
+                <div class="member">
+                    <a href="#">
+                        <span class="rollover"></span>
+                    </a>
+                    <img src="img/pic4.jpg"/>
+                    <h3>Adrian Thomas</h3>
+                    <h4>CEO&Founder</h4>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been </p>
+                </div>
+                <div class="member">
+                    <a href="#">
+                        <span class="rollover"></span>
+                    </a>
+                    <img src="img/pic2.jpg"/>
+                    <h3>Narate Ketram</h3>
+                    <h4>Creative Diector</h4>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been </p>
+                </div>
+                <div class="member">
+                    <a href="#">
+                        <span class="rollover"></span>
+                    </a>
+                    <img src="img/pic3.jpg" alt="" />
+                    <h3>Fernando Comet</h3>
+                    <h4>CEO&Founder</h4>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been </p>
+                </div>
+                <div class="member">
+                    <a href="#">
+                        <span class="rollover"></span>
+                    </a>
+                    <img src="img/pic1.jpg" alt="" />
+                    <h3>Adedayo Saheed</h3>
+                    <h4>Creative Diector</h4>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been </p>
+                </div>
+            </div>
         </div>
     </div>
   </body>
