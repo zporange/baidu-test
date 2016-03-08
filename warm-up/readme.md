@@ -1,9 +1,7 @@
-### ÏîÄ¿¼òÒª
-- ÕÅÃ÷   reset.css±àĞ´  Ò³Ãæ¿ò¼ÜÖ÷ÌâÊµÏÖ
-- »Æ±ù header ºÍÂÖ²¥
-- ÔøÆ¼ content ÖĞµÄ ÉÏ°ë²¿·Ö
-- Öì³¬È»  content ÖĞµÄ ÏÂ°ë²¿·Ö
-- ÎÒ   footer  ÓÚ ÏÂÃæµÄÂÖ²¥
-Ä£°åµØÖ· http://www.cssmoban.com/cssthemes/5642.shtml
-ÓĞÔÚÏßÔ¤ÀÀ¿É¹©²Î¿¼
+### é¡¹ç›®ç®€è¦
+- æˆ‘ reset.cssç¼–å†™ é¡µé¢æ¡†æ¶ä¸»é¢˜å®ç°
+- é»„å†° header å’Œè½®æ’­
+- æ›¾è content ä¸­çš„ ä¸ŠåŠéƒ¨åˆ†
+- æœ±è¶…ç„¶ content ä¸­çš„ ä¸‹åŠéƒ¨åˆ†
+- å¼ æ˜ footer äº ä¸‹é¢çš„è½®æ’­ æ¨¡æ¿åœ°å€ http://www.cssmoban.com/cssthemes/5642.shtml æœ‰åœ¨çº¿é¢„è§ˆå¯ä¾›å‚è€ƒ 
 ![](http://ww3.sinaimg.cn/large/005BmbB6jw1f1omi3gxx0j307u0llwgg.jpg)
