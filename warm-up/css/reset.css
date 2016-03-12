@@ -1,0 +1,79 @@
+@charset "utf-8";
+html {font-family: 'Open Sans', sans-serif;}
+body {margin: 0;background: #ffffff;font-size: 100%;}
+ol,ul {list-style: none;margin: 0;padding: 0;}
+a {text-decoration: none;}
+a:active,a:hover {outline: 0;}
+img {border: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+td,th {padding: 0;}
+/*全局定义样式*/
+.layout {margin: 0 auto;width: 80%;}
+.blank {height: 90px;}
+/*公共样式表*/
+/* position */
+.rel{position:relative;}
+.abs{position:absolute;}
+.fix{position: fixed;}
+/*left top bottom  right*/
+.t0{top: 0;}
+.l0{left: 0;}
+.r0{right: 0;}
+.b0{bottom: 0;}
+/*z-index*/
+.zx1{z-index:1;}
+.zx2{z-index:2;}
+.zx3{z-index:3;}
+/* display */
+.dn{display:none;}
+.di{display:inline;}
+.db{display:block;}
+.dib{display:inline-block;}
+/* float */
+.fl{float:left;}
+.fr{float:right;}
+/* overflow */
+.ovh{overflow:hidden;}
+.ova{overflow:auto;}
+/* font-size */
+.f0{font-size:0;}
+.f10{font-size:10px;}
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f24{font-size:24px;}
+/* font-style */
+.n{font-weight:normal; font-style:normal;}
+.b{font-weight:bold;}
+.i{font-style:italic;}
+/* text-align */
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tl{text-align:left;}
+.tj{text-align:justify;}
+/* vertical-align */
+.vm{vertical-align:middle;}
+.vtb{vertical-align:text-bottom;}
+.vb{vertical-align:bottom;}
+.vt{vertical-align:top;}
+.vn{vertical-align:-2px;}
+/*border*/
+.bd0{border: 0;}
+.bt0{border-top:0 ;}
+.br0{border-right: 0;}
+.bb0{border-bottom: 0;}
+.bl0{border-left: 0;}
+/* visibility */
+.vh{visibility:hidden;}
+.vv{visibility:visible;}
+/* 大小不定元素垂直居中 */
+.dib_vm{display:inline-block;  height:100%; vertical-align:middle;}
+/*超出点点点*/
+.ell {text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+/*清除浮动*/
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden}
+.clearfix {*zoom:1}
+
