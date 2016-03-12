@@ -90,12 +90,23 @@
             font-size: 16px;
             width: 30.1%;
             margin: 0 1.6%;
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
+        }
+
+        .pricing-grid:hover {
+            box-shadow: 0 0 0px 2px #fff;
+            -webkit-transform: scale(1.04) translateY(-5px);
+            z-index: 1;
+            border-bottom: 0 none;
         }
 
         .pricing-grid .level {
             text-align: center;
             background: #485460;
             padding: 1em 0em;
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
         }
 
         .pricing-grid .level a {
@@ -104,6 +115,11 @@
             font-size: 1.8em;
             /*padding: 0.6em 1em;*/
             display: block;
+        }
+
+        .pricing-grid:hover .level,
+        .pricing-grid:hover .cart a{
+            background: #49CBCD;
         }
 
         .pricing-grid .price-value {
@@ -128,6 +144,11 @@
             border-top: 1px solid #ECECEC;
         }
 
+        .pricing-grid .list a:hover {
+            background: #F8F9FB;
+            color: #49CBCD;
+        }
+
         .pricing-grid .cart {
             padding: 2em 1em;
             background: #fff;
@@ -142,6 +163,8 @@
             font-weight: 500;
             font-family: 'Open Sans', sans-serif;
             border-radius: 3px;
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
         }
 
     </style>
