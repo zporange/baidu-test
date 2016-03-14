@@ -14,7 +14,7 @@ td,th {padding: 0;}
 /* position */
 .rel{position:relative;}
 .abs{position:absolute;}
-.fix{position: fixed;}	
+.fix{position: fixed;}
 /*left top bottom  right*/
 .t0{top: 0;}
 .l0{left: 0;}
@@ -28,7 +28,7 @@ td,th {padding: 0;}
 .dn{display:none;}
 .di{display:inline;}
 .db{display:block;}
-.dib{display:inline-block;} 
+.dib{display:inline-block;}
 /* float */
 .fl{float:left;}
 .fr{float:right;}
