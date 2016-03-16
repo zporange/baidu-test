@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>第一阶段_任务四_定位和居中问题</title>
+
+		<style type="text/css">
+			.box {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 400px;
+				height: 200px;
+				margin: auto;
+				overflow: hidden;
+				background-color: #ccc;
+			}
+			
+			.round {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: #fc0;
+			}
+			
+			.round.left {
+				left: -50px;
+				top: -50px;
+			}
+			
+			.round.right {
+				right: -50px;
+				bottom: -50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<span class="round left"></span>
+			<span class="round right"></span>
+		</div>
+	</body>
+
 </html>
