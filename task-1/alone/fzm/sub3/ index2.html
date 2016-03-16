@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>第一阶段_任务三_三栏式布局</title>
+		<style type="text/css">
+			html,
+			body,
+			h1,
+			h3 {
+				margin: 0;
+			}
+			
+			body {
+				font: 14px/1.5 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+				padding: 20px;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			/*通用*/
+			
+			.f {
+				float: left;
+			}
+			
+			.r {
+				float: right;
+			}
+			
+			.p20 {
+				padding: 20px;
+			}
+			
+			.ovh {
+				overflow: hidden;
+			}
+			
+			.clearfix::after {
+				content: '';
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden;
+			}
+			/*本页样式表*/
+			
+			.bge {
+				background-color: #eee;
+			}
+			
+			.bgf {
+				background-color: #fff;
+			}
+			
+			.bge,
+			.bgf {
+				border: 1px solid #999;
+			}
+			
+			.body {
+				min-width: 800px;
+				background-color: #eee;
+			}
+			
+			.main {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.main .contact {
+				margin: 0 140px 0 220px;
+			}
+			
+			.team {
+				width: 163px;
+				margin-left: -100%;
+				padding: 19px 16px 19px 19px;
+			}
+			
+			.team span {
+				width: 61px;
+			}
+			
+			.alone {
+				width: 78px;
+				margin-left: -120px;
+				padding: 0 20px;
+			}
+			
+			.alone li {
+				margin: 20px 0;
+			}
+			
+			.logo {
+				width: 80px;
+				height: 80px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="body p20 bge clearfix">
+			<div class="main f ">
+				<div class="contact p20 bgf">
+					<h3>团队简介</h3>
+					<p>敌后武工队的队员们都是一些热爱web前端的大好青年！</p>
+					<p>名字由来是因为那个火红的年代。人们普遍衣食无华、诚实友善、有信仰精神层次高、团结之至。这是我们这个时代大多数年轻人所不具备的。而我们的队员在前端的路上也正是有着这种精神。学习是枯燥乏味的，只有坚持到底的人才能看到曙光，我们一直这么坚信着。时刻准备着为了前端事业而奋斗！！！</p>
+					<img src="http://ww1.sinaimg.cn/large/005BmbB6jw1f1yfymu4tdj306607u0u4.jpg" alt="前端成就未来" />
+				</div>
+			</div>
+			<div class="team bgf f">
+				<h1 class="logo f bge"><img src="http://ww3.sinaimg.cn/large/005BmbB6jw1f1xsrycmi2j30ak0akaci.jpg"/ width="80" height="80"  alt="团队logo"  /></h1>
+				<span class="r">
+					敌后武工队
+				</span>
+			</div>
+			<ul class="alone bgf f">
+				<li class="logo bge"></li>
+				<li class="logo bge"></li>
+				<li class="logo bge"></li>
+				<li class="logo bge"></li>
+			</ul>
+		</div>
+	</body>
+
+</html>
