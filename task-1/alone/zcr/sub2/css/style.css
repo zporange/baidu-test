@@ -13,6 +13,10 @@ ul{
     padding: 0;
 }
 
+td,th {
+    padding: 0;
+}
+
 .clearfix:after {
     content: '';
     display: block;
@@ -116,9 +120,82 @@ main {
     margin: 0 10px
 }
 
-/*.article-list .article ol li {
-    list-style: disc;
+.article-list .article table {
+    width: 100%;
+}
+
+.article-list .article table thead{
+    background: #333;
+    color: #fff;
+    text-align: left;
+}
+
+.article-list .article table tfoot{
+    background: #cdcdcd;
+    color: #020003;
+    font-weight: bold;
+}
+
+.article-list .article table td,
+.article-list .article table th {
+    padding: 3px;
+    border: 1px solid #c5c5c5;
+}
+
+aside {
+    width: 100%;
+    background: #dedede;
+    border: 1px solid #dedede;
+}
+
+.aside-item {
+    background: #fff;
+    margin: 32px;
+    padding: 32px;
+}
+
+.aside-item h1 {
+    border-left: 3px solid #cbcbcb;
+    padding: 8px;
+}
+
+/*.aside-item form {
+    background: pink;
 }*/
+
+.aside-item form > div{
+    margin-left: 30%;
+}
+
+.aside-item table {
+    width: 100%;
+}
+
+.aside-item table td {
+    padding: 5px 10px;
+}
+
+.aside-item table tr td:first-child {
+    text-align: right;
+    vertical-align: top;
+    width: 30%;
+}
+
+.aside-item .submit-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    background: #2c62cd;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.aside-item .prompt {
+    color: #a3a3a1;
+    font-size: 14px;
+}
 
 footer {
     text-align: center;
