@@ -1,0 +1,63 @@
+body {
+  padding: 20px;
+}
+h1 {
+  font-size: 1em;
+  float: right;
+  display: table-cell;
+  text-align: center;
+  width: 61px;
+}
+h2 {
+  font-size: 1.2em;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.column {
+  float: left;
+}
+#container {
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid #999;
+  min-width: 600px;
+}
+#container #center {
+  width: 100%;
+  height: 100%;
+}
+#container #center .main {
+  margin: 0 140px 0 220px;
+  border: 1px solid #999;
+  background-color: #fff;
+  padding: 20px;
+}
+#container #team-left {
+  box-sizing: border-box;
+  padding: 19px 20px 19px 19px;
+  border: 1px solid #999;
+  margin-left: -100%;
+  width: 200px;
+  background-color: #fff;
+}
+#container #stuff-right {
+  border: 1px solid #999;
+  background-color: #fff;
+  width: 80px;
+  padding: 0 20px 20px 20px;
+  margin-left: -122px;
+}
+#container #stuff-right li {
+  padding-top: 17px;
+}
