@@ -7,3 +7,5 @@
 * 外层容器设置个最小宽度，记得清浮动
 * 中间层宽高为100%
 * 左、右使用负margin，固定宽度
+注意：如果元素宽度为100%时，设置其它盒模型属性，如margin,padding会让盒子撑破(标准模式下)，box-sizing在一定程度上能解决这样的问题，还有一个方便是方法是使用calc()IE8以下不支持
+[详见](http://www.w3cplus.com/css3/how-to-use-css3-calc-function.html)
