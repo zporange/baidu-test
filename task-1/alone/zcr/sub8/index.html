@@ -2,9 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>响应式网格（栅格化）布局 Demo</title>
+    <style media="screen">
+
+    body {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .grid-container{
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .row:before,
+    .row:after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+
+    .row {
+        margin: 0 -10px;
+    }
+
+    [class*='col-'] {
+        float: left;
+        min-height: 1px;
+        width: 16.66%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .rect {
+        background-color: #eee;
+        height: 50px;
+        padding: 5px;
+        color: #ed462f;
+        box-sizing: border-box;
+        border: 1px solid #999;
+    }
+
+    .sm {
+        display: none;
+    }
+
+    .lg {
+        display: inline;
+    }
+
+    .col-lg-1{ width: 8.33%; }
+    .col-lg-2{ width: 16.66%; }
+    .col-lg-3{ width: 25%;    }
+    .col-lg-4{ width: 33.33%; }
+    .col-lg-5{ width: 41.66%; }
+    .col-lg-6{ width: 50%;   }
+    .col-lg-7{ width: 58.33%; }
+    .col-lg-8{ width: 66.66%; }
+    .col-lg-9{ width: 75%;    }
+    .col-lg-10{ width: 83.33%; }
+    .col-lg-11{ width: 91.66%; }
+    .col-lg-12{ width: 100%;   }
+
+
+    @media (max-width:768px) {
+
+        .col-sm-2{ width: 16.66%; }
+        .col-sm-3{ width: 25%; }
+        .col-sm-6{ width: 50%; }
+        .col-sm-6{ width: 50%; }
+        .col-sm-8{ width: 66.66%; }
+        .col-sm-12{ width: 100%; }
+
+        .sm {
+            display: inline;
+        }
+
+        .lg {
+            display: none;
+        }
+
+    }
+
+    </style>
 </head>
 <body>
-    
+    <div class="grid-container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="rect"><span class="lg">四</span><span class="sm">六</span>栏</div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="rect"><span class="lg">四</span><span class="sm">六</span>栏</div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="rect"><span class="lg">四</span><span class="sm">十二</span>栏</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-3">
+                <div class="rect"><span class="lg">三</span><span class="sm">三</span>栏</div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="rect"><span class="lg">六</span><span class="sm">六</span>栏</div>
+            </div>
+            <div class="col-lg-3 col-sm-3">
+                <div class="rect"><span class="lg">三</span><span class="sm">三</span>栏</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-sm-2">
+                <div class="rect"><span class="lg">一</span><span class="sm">二</span>栏</div>
+            </div>
+            <div class="col-lg-1 col-sm-2">
+                <div class="rect"><span class="lg">一</span><span class="sm">二</span>栏</div>
+            </div>
+            <div class="col-lg-2 col-sm-8">
+                <div class="rect"><span class="lg">二</span><span class="sm">八</span>栏</div>
+            </div>
+            <div class="col-lg-2 col-sm-3">
+                <div class="rect"><span class="lg">二</span><span class="sm">三</span>栏</div>
+            </div>
+            <div class="col-lg-6 col-sm-3">
+                <div class="rect"><span class="lg">六</span><span class="sm">三</span>栏</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
