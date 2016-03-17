@@ -159,10 +159,6 @@ aside {
     padding: 8px;
 }
 
-/*.aside-item form {
-    background: pink;
-}*/
-
 .aside-item form > div{
     margin-left: 30%;
 }
