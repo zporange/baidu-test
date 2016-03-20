@@ -1,0 +1,43 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container div{
+  width: 150px;
+  margin: 20px;
+  border: 1px solid #f00;
+  
+}
+.item1{
+  height: 120px;
+}
+.item2{
+  height: 100px;
+}
+.item3{
+  height: 40px;
+}
+.container .item4{
+  height: 200px;
+  border-color: #00f;
+}
+
+@media all and (max-width:640px){
+
+  .container{
+   align-items: flex-start;
+    flex-wrap: wrap;
+    
+  }
+  .item4{order:1;}
+  .item1{order:2;}
+  .item2{order:3;}
+  .item3{order:4;}
+  
+}
