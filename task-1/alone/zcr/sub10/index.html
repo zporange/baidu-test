@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox 布局</title>
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .wrap {
+            display: flex;
+            padding :20px;
+            height: 500px;
+            justify-content: space-between;/*定义了弹性子元素如何在当前线上沿着主轴排列。*/
+            align-items: center;/*定义了弹性子元素如何在当前线上沿着侧轴排列。*/
+            flex-direction: row;/*创建主轴,从而定义了伸缩项目放置在伸缩容器的方向。*/
+        }
+
+        .rect1 {
+            width: 150px;
+            height: 120px;
+            border: 1px solid #f00;
+        }
+
+        .rect2 {
+            width: 150px;
+            height: 100px;
+            border: 1px solid #f00;
+        }
+
+        .rect3 {
+            width: 150px;
+            height: 40px;
+            border: 1px solid #f00;
+        }
+
+        .rect4 {
+            width: 150px;
+            height: 200px;
+            border: 1px solid #0f0;
+        }
+
+        @media screen and (max-width:640px) {
+            .wrap{
+                align-items: flex-start;
+                flex-wrap: wrap;
+                align-content: space-around;
+            }
+
+            .rect4 {
+                order: -1;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="wrap">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+    </div>
 </body>
 </html>
