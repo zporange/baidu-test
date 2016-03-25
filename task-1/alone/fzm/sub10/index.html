@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 10px;
+			}
+			
+			* {
+				box-sizing: border-box;
+			}
+			
+			.flex-box {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			
+			[class*='item-'] {
+				padding: 10px;
+			}
+			
+			.wrapper {
+				width: 150px;
+				text-align: center;
+				border: 1px solid #f00;
+			}
+			
+			.item-1 .wrapper {
+				height: 120px;
+				line-height: 120px;
+			}
+			
+			.item-2 .wrapper {
+				height: 100px;
+				line-height: 100px;
+			}
+			
+			.item-3 .wrapper {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			.item-4 .wrapper {
+				height: 200px;
+				line-height: 200px;
+				border-color: #00f;
+			}
+			
+			@media (min-width:640px) {
+				.flex-box {
+					align-items: center;
+				}
+			}
+			
+			@media (max-width:640px) {
+				.flex-box {
+					align-items: flex-start;
+				}
+				.item-4 {
+					order: -1;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-box">
+			<div class="item-1">
+				<div class="wrapper">
+					item-1
+				</div>
+			</div>
+			<div class="item-2">
+				<div class="wrapper">
+					item-2
+				</div>
+			</div>
+			<div class="item-3">
+				<div class="wrapper">
+					item-3
+				</div>
+			</div>
+			<div class="item-4">
+				<div class="wrapper">
+					item-4
+				</div>
+			</div>
+		</div>
+	</body>
+
 </html>
