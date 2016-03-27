@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js task-1</title>
+</head>
+<body>
+    <label for="">请输入北京今天空气质量：
+        <input type="text" id="aqi-input">
+    </label>
+    <button id="button">确认填写</button>
+    <div>你输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script>
+    
+    (function() {
+        var ipt = document.getElementById("aqi-input"),
+            btn = document.getElementById("button"),
+            display = document.getElementById("aqi-display");
+
+        addEvent(btn, 'click', function() {
+            changeAqi();
+        });
+
+        function changeAqi() {
+            if(ipt.value.trim() == "") {  //trim()不支持IE9以下版本
+                display.innerText = "请输入北京今天空气质量...";
+                return;
+            } else {
+                display.innerText = ipt.value;  
+                ipt.value = '';  //清空input的值
+            }
+        }
+    })();
+
+    //做事件的兼容
+    function addEvent(node, type, handler) {
+        if (!node) return false;
+        if (node.addEventListener) {
+            node.addEventListener(type, handler, false);
+            return true;
+        }
+        else if (node.attachEvent) {
+            node.attachEvent('on' + type, function() { handler.apply(node); });
+            //用apply方式改变this的作用域
+            return true;
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

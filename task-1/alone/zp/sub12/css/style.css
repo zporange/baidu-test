@@ -1,0 +1,112 @@
+body,ul{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font: 14px "Microsoft Yahei";
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+section{
+	margin: 30px;
+	padding-bottom: 20px;
+}
+ /* part 1*/
+table{
+	width: 350px;
+}
+.colgroup:first-child{
+	width: 15%;
+}
+.colgroup:nth-child(2){
+	width: 60%;
+}
+.colgroup:last-child{
+	width: 25%;
+}
+thead tr{
+	background-color: #000;
+	color: #fff;
+}
+tbody tr:nth-child(even){
+	background-color: #ccc;
+}
+tbody tr:nth-child(-n + 3){
+	color: #f00;
+}
+
+ /* part 2*/
+.scaleInput{
+	width: 100px;
+	transition: width .6s;
+}
+.scaleInput:focus{
+	width: 150px;
+}
+/* part 3*/
+@keyframes scroll{
+	0% {
+		left: -100%;
+	}
+	50% {
+		left: 0;
+	}
+	100%{
+		left:100%;
+	}
+}
+.wrap{
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 200px;
+	bottom: 1px solid #9cc5ef;
+}
+.slider{
+	width: 300%;
+	color: #fff;
+	font: bold 100px/200px "Microsoft Yahei";
+	text-align: center;
+}
+.slider li{
+	width: 300px;
+	height: 100%;
+}
+.slider li,.banner-controll{
+	position: absolute;
+}
+.slider li:first-child{
+	background-color: #6bacef;
+}
+.slider li:nth-child(2){
+	background-color: #297cd3;
+}
+.slider li:last-child{
+	background-color: #01254a;
+}
+.slider li:target {
+	z-index: 2;
+	// animation: scroll .5s linear;
+	animation: scroll 15s linear 5s infinite;
+}
+.banner-controll{
+	overflow: hidden;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+}
+.banner-controll a{
+	margin-left: 2px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	opacity: 0.5;
+	color: #000;
+}
