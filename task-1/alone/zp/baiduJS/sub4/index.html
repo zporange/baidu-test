@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>js task-4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/task.js"></script>
 </head>
 <body>
-    
+    <form action="#">
+        <fieldset>
+            <label>城市名称：</label><br>
+            <input type="text" id="aqi-city-input"><span id="city-error" class="error"></span><br>
+            <label>空气质量指数：</label><br>
+            <input type="text" id="aqi-value-input"><span id="value-error" class="error"></span><br>
+            <button id="add-btn" class="btn">确认添加</button>
+        </fieldset>
+    </form>
+    <table id="aqi-table" border="1">
+        <tr>
+            <th>城市</th>
+            <th>空气质量</th>
+            <th>操作</th>
+        </tr>
+    </table>
 </body>
 </html>
